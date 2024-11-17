@@ -1,0 +1,58 @@
+h1 {
+  color: #FF6347; /* Tomato red */
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px #000; /* Slight shadow for depth */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F0FFF0; /* Honeydew light green */
+  color: #444; /* Darker grey for text */
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #FAFAD2; /* Light golden background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+.post {
+  border: 2px solid #6A5ACD; /* Slate blue border */
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 10px;
+  background-color: #FFFACD; /* Lemon chiffon */
+  box-shadow: 4px 4px 12px rgba(106, 90, 205, 0.3); /* Softer shadow with color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post:hover {
+  transform: scale(1.02);
+  box-shadow: 6px 6px 18px rgba(106, 90, 205, 0.5); /* Shadow grows on hover */
+}
+.loader {
+  border: 16px solid #FF4500; /* OrangeRed border */
+  border-top: 16px solid #32CD32; /* LimeGreen top */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
